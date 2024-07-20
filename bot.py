@@ -24,7 +24,7 @@ def check_catalog_ids(catalog_ids):
 
     
     chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Run in headless mode
+    chrome_options.add_argument("--headless") 
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
@@ -41,7 +41,7 @@ def check_catalog_ids(catalog_ids):
         try:
             url = f"https://www.roblox.com/catalog/{catalog_id}"
             driver.get(url)
-            time.sleep(2)  # Wait for the page to load and redirect if necessary
+            time.sleep(2)  
 
             buy_button = driver.find_elements(By.CLASS_NAME, "shopping-cart-buy-button")
             buy_button_alt = driver.find_elements(By.CLASS_NAME, "PurchaseButton")
@@ -67,7 +67,7 @@ async def check_items_status():
                 alert_message = f"[alert] Catalog ID {item_id} is now {current_status}!"
                 await bot.get_channel(CHANNEL_ID).send(alert_message)
 
-        await asyncio.sleep(10)  # Check every 10 seconds
+        await asyncio.sleep(10)  # Check every 10 seconds you can change if you want
 
 @bot.event
 async def on_ready():

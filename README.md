@@ -1,3 +1,4 @@
+## REQUIREMENTS: Discord Server duh,Discord bot with permissions and intents,python
 ## TUTORIAL HERE: https://drive.google.com/file/d/1kknfskqebQRSzwreWG798Efy2D4tOJQl/view?usp=sharing
 # Roblox Catalog Sale Notifier Bot
 
